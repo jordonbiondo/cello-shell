@@ -1,0 +1,8 @@
+/.sconsign.dblite
+*~
+*.o
+*.sconsign.dblite
+/build/cello-shell
+/build/cs-dbg
+/build/cs-opt
+
