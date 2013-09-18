@@ -1,7 +1,7 @@
 #shared
 source_files = ['src/cello-shell.c']
 env = Environment(CC = 'gcc', CCFLAGS=['-std=gnu99', '-Wall', '-fnested-functions'])
-env.Append(LIBS = ['Cello'])
+env.Append(LIBS = [''])
 #optimized env
 opt = env.Clone()
 opt.Append(CCFLAGS = ['-O3'])
