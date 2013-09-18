@@ -24,16 +24,6 @@
  *   }
  */
 
-defCommand(foobar, int a, int b) { ... } ->
-
-int _command_foobar(int a, int b);
-const void* foobar = &_command_foobar;
-const char* _command_foobar_str = "foobar";
-const char* _command_foobar_sig = "int a, int b";
-const char* _command_foobar_argc = 2;
-int _command_foobar(int a, int b) {
-  ...
-}
 
 #define defCommand(name, ...)						\
   int CMD_NAME(name)(void* ctx, __VA_ARGS__);				\
